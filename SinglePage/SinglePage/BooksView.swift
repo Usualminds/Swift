@@ -25,7 +25,7 @@ struct BooksView: View {
     var body: some View {
         VStack {
                 List(books,id: \.self) { book in
-                    VStack {
+                    VStack() {
                         Text(book)
                             .font(.largeTitle)
                             .onTapGesture(perform: {
@@ -38,6 +38,7 @@ struct BooksView: View {
                     .padding()
                     Divider()
                 }
+            
         
         }
         .scrollDisabled(false)

@@ -13,9 +13,10 @@ struct SinglePageApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(dataSource)
-                
+            NavigationView{
+                ContentView()
+            }
+            .environmentObject(dataSource)
         }
     }
 }
